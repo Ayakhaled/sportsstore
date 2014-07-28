@@ -8,14 +8,14 @@ namespace Backend.Controllers
     {
         public IHttpActionResult Get()
         {
-            return Ok(WebApiApplication.Products);
+            return Ok(DataStorage.Products);
         }
 
         public IHttpActionResult Get(int id)
         {
-            if (WebApiApplication.Products.ElementAtOrDefault(id) == null)
+            if (DataStorage.Products.ElementAtOrDefault(id) == null)
                 return NotFound();
-            return Ok(WebApiApplication.Products[id]);
+            return Ok(DataStorage.Products[id]);
         }
 
         public IHttpActionResult Post([FromBody] Product product)
@@ -24,7 +24,7 @@ namespace Backend.Controllers
             {
                 return BadRequest(ModelState);
             }
-            WebApiApplication.Products.Add(product);
+            DataStorage.Products.Add(product);
             return Ok();
         }
 
@@ -34,17 +34,17 @@ namespace Backend.Controllers
             {
                 return BadRequest(ModelState);
             }
-            if (WebApiApplication.Products.ElementAtOrDefault(id) == null)
+            if (DataStorage.Products.ElementAtOrDefault(id) == null)
                 return NotFound();
-            WebApiApplication.Products.Insert(id, product);
+            DataStorage.Products.Insert(id, product);
             return Ok();
         }
 
         public IHttpActionResult Delete(int id)
         {
-            if (WebApiApplication.Products.ElementAtOrDefault(id) == null)
+            if (DataStorage.Products.ElementAtOrDefault(id) == null)
                 return NotFound();
-            WebApiApplication.Products.RemoveAt(id);
+            DataStorage.Products.RemoveAt(id);
             return Ok();
         }
     }
