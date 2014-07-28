@@ -1,22 +1,14 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name sportsstoreApp
- * @description
- * # sportsstoreApp
- *
- * Main module of the application.
- */
-angular
-  .module('sportsStore', [
+angular.module('sportsStore', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
-  ])
+    'ngTouch',
+    'customFilters'
+])
   .config(function ($routeProvider) {
       $routeProvider
         .when('/', {
