@@ -38,11 +38,45 @@ namespace Backend
                 price = 34.9
             });
 
-            //            Stadium Flat-packed 35,000-seat stadium Soccer 79500.00
-            //Thinking Cap Improve your brain efficiency by 75% Chess 16
-            //Unsteady Chair Secretly give your opponent a disadvantage Chess 29.95
-            //Human Chess Board A fun game for the family Chess 75
-            //Bling-Bling King Gold-plated, diamond-studded King Chess 1200
+            Products.Add(new Product
+            {
+                name = "Stadium",
+                description = "Flat-packed 35,000-seat stadium",
+                category = "Soccer",
+                price = 79500.00
+            });
+
+            Products.Add(new Product
+            {
+                name = "Thinking Cap",
+                description = "Improve your brain efficiency by 75%",
+                category = "Chess",
+                price = 16
+            });
+
+            Products.Add(new Product
+            {
+                name = "Unsteady Chair",
+                description = "Secretly give your opponent a disadvantagev",
+                category = "Chess",
+                price = 29.95
+            });
+
+            Products.Add(new Product
+            {
+                name = "Human Chess Board",
+                description = "A fun game for the family",
+                category = "Chess",
+                price = 75
+            });
+
+            Products.Add(new Product
+            {
+                name = "Bling-Bling King",
+                description = "Gold-plated, diamond-studded King",
+                category = "Chess",
+                price = 1200
+            });
         }
     }
 }
