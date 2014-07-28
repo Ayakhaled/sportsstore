@@ -3,3 +3,8 @@ dist
 .tmp
 .sass-cache
 bower_components
+/app/packages
+/Backend/bin
+/Backend/obj/Debug
+*.user
+*.suo
