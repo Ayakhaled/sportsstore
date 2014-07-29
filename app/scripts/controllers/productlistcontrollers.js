@@ -24,7 +24,7 @@ angular.module('sportsStore')
     };
 
     $scope.getCategoryClass = function(category) {
-        return selectedCategory === category ? productListActiveClass : '';
+        return selectedCategory == category ? productListActiveClass : '';
     };
 
     $scope.getPageClass = function(page) {

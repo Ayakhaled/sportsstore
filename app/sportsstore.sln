@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "controllers", "controllers"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "views", "views", "{38DBB53B-7278-4E6E-A9F0-C246151A7929}"
 	ProjectSection(SolutionItems) = preProject
-		views\main.html = views\main.html
+		views\productlist.html = views\productlist.html
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "styles", "styles", "{AF07FA60-2626-454B-93FD-064BBA66F941}"

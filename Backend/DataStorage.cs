@@ -57,7 +57,7 @@ namespace Backend
             Products.Add(new Product
             {
                 name = "Unsteady Chair",
-                description = "Secretly give your opponent a disadvantagev",
+                description = "Secretly give your opponent a disadvantage",
                 category = "Chess",
                 price = 29.95
             });
