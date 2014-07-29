@@ -21,6 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "controllers", "controllers"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "views", "views", "{38DBB53B-7278-4E6E-A9F0-C246151A7929}"
 	ProjectSection(SolutionItems) = preProject
+		views\checkoutsummary.html = views\checkoutsummary.html
 		views\productlist.html = views\productlist.html
 	EndProjectSection
 EndProject
@@ -48,6 +49,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C8653E
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cart", "cart", "{0B81AD58-9980-449B-A28A-586971AD976B}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\cart\cart.js = scripts\cart\cart.js
+		scripts\cart\cartSummary.html = scripts\cart\cartSummary.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,5 +76,6 @@ Global
 		{AF07FA60-2626-454B-93FD-064BBA66F941} = {34D2D4F1-5838-4261-ACD9-4CFAC38982D6}
 		{77444FB0-C214-45C3-B6D4-3504E5BD5527} = {34D2D4F1-5838-4261-ACD9-4CFAC38982D6}
 		{C9035D42-F9E1-4E53-8F62-463D07364BBF} = {C8F6CF5E-8736-466D-88EA-7D6C07191EB7}
+		{0B81AD58-9980-449B-A28A-586971AD976B} = {C8F6CF5E-8736-466D-88EA-7D6C07191EB7}
 	EndGlobalSection
 EndGlobal

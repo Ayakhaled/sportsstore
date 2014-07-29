@@ -7,7 +7,8 @@ angular.module('sportsStore', [
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'customFilters'
+    'customFilters',
+    'cart'
 ])
   .config(function ($routeProvider) {
       $routeProvider
