@@ -23,14 +23,13 @@
         <div class="navbar navbar-inverse">
             <a class="navbar-brand" href="#">SPORTS STORE</a>
         </div>
-        <div class="alert alert-danger" ng-show="data.error">
-            Error ({{data.error.status}}). The product data was not loaded.
+        <div class="alert alert-danger" ng-show="data.products == null">
+            Error ({{data.error}}). The product data was not loaded.
             <a href="/app.html" class="alert-link">Click here to try again</a>
         </div>
-        <div class="panel panel-default row" ng-controller="productListCtrl" ng-hide="data.error">
+        <div class="panel panel-default row" ng-controller="productListCtrl" ng-hide="data.products == null">
             <div class="col-xs-3">
-                <a ng-click="selectCategory()"
-                   class="btn btn-block btn-default btn-lg" ng-class="getCategoryClass(item)">
+                <a ng-click="selectCategory()" class="btn btn-block btn-default btn-lg" ng-class="getCategoryClass(item)">
                     Home
                 </a>
                 <a ng-repeat="item in data.products | orderBy:'category' | unique:'category'"
