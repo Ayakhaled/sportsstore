@@ -18,22 +18,19 @@ angular
     'ngTouch'
     ])
     .config(function ($routeProvider) {
+        $routeProvider.when("/complete", {
+            templateUrl: "views/thankyou.html"
+        });
+        $routeProvider.when("/placeorder", {
+            templateUrl: "views/placeorder.html"
+        });
         $routeProvider.when("/checkout", {
-            templateUrl: "views/checkoutSummary.html"
+            templateUrl: "views/checkoutsummary.html"
         });
         $routeProvider.when("/products", {
-            templateUrl: "views/productList.html"
+            templateUrl: "views/productlist.html"
         });
         $routeProvider.otherwise({
-            templateUrl: "views/productList.html"
+            templateUrl: "views/productlist.html"
         });
     });
-    //.config(function ($routeProvider) {
-    //    $routeProvider
-    //    .when('/', {
-    //        templateUrl: 'views/productlist.html'
-    //    })
-    //    .otherwise({
-    //        redirectTo: '/'
-    //    });
-    //});

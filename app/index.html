@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>SportsStore</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -27,7 +27,7 @@
         </div>
         <div class="alert alert-danger" ng-show="data.error">
             Error ({{data.error}}). The product data was not loaded.
-            <a href="/app.html" class="alert-link">Click here to try again</a>
+            <a href="/index.html" class="alert-link">Click here to try again</a>
         </div>
         <ng-view />
     </div>
@@ -71,6 +71,7 @@
     <script src="scripts/services/cart.js"></script>
     <script src="scripts/directives/cartsummary.js"></script>
     <script src="scripts/filters/custom.js"></script>
+    <script src="scripts/controllers/cartsummarycontroller.js"></script>
     <!-- endbuild -->
 </body>
 </html>
