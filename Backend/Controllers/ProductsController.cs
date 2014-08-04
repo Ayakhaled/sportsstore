@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Web.Http;
 using Backend.Models;
 
@@ -11,11 +12,12 @@ namespace Backend.Controllers
             return Ok(DataStorage.Products);
         }
 
-        public IHttpActionResult Get(int id)
+        public IHttpActionResult Get(Guid id)
         {
-            if (DataStorage.Products.ElementAtOrDefault(id) == null)
+            var product = DataStorage.Products.FirstOrDefault(x => x.id == id);
+            if (product == default(Product))
                 return NotFound();
-            return Ok(DataStorage.Products[id]);
+            return Ok(product);
         }
 
         public IHttpActionResult Post([FromBody] Product product)
@@ -24,27 +26,32 @@ namespace Backend.Controllers
             {
                 return BadRequest(ModelState);
             }
+            product.id = Guid.NewGuid();
             DataStorage.Products.Add(product);
-            return Ok();
+            return Ok(product);
         }
 
-        public IHttpActionResult Put(int id, [FromBody] Product product)
+        public IHttpActionResult Put(Guid id, [FromBody] Product product)
         {
             if (product == null || !ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-            if (DataStorage.Products.ElementAtOrDefault(id) == null)
+            var oldProduct = DataStorage.Products.FirstOrDefault(x => x.id == id);
+            if (oldProduct == default(Product))
                 return NotFound();
-            DataStorage.Products.Insert(id, product);
+            product.id = oldProduct.id;
+            DataStorage.Products.Remove(oldProduct);
+            DataStorage.Products.Add(product);
             return Ok();
         }
 
-        public IHttpActionResult Delete(int id)
+        public IHttpActionResult Delete(Guid id)
         {
-            if (DataStorage.Products.ElementAtOrDefault(id) == null)
+            var product = DataStorage.Products.FirstOrDefault(x => x.id == id);
+            if (product == default(Product))
                 return NotFound();
-            DataStorage.Products.RemoveAt(id);
+            DataStorage.Products.Remove(product);
             return Ok();
         }
     }

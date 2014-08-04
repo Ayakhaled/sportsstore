@@ -41,7 +41,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "views", "views", "{9E111DE2-DB82-4AE1-AAC3-CF372CDEDB51}"
 	ProjectSection(SolutionItems) = preProject
 		app\views\checkoutsummary.html = app\views\checkoutsummary.html
+		app\views\placeorder.html = app\views\placeorder.html
 		app\views\productlist.html = app\views\productlist.html
+		app\views\thankyou.html = app\views\thankyou.html
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{0F29DDBB-D631-4D82-BA67-344A4A959F22}"

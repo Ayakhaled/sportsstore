@@ -6,6 +6,7 @@ namespace Backend
     public static class DataStorage
     {
         public static readonly List<Product> Products = new List<Product>();
+        public static readonly List<Order> Orders = new List<Order>();
 
         public static void Seed()
         {
