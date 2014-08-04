@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
     <meta charset="utf-8">
-    <title>SportsStore</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -15,18 +15,35 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 </head>
-<body ng-controller="sportsStoreCtrl">
-    <div class="navbar navbar-inverse">
-        <a class="navbar-brand" href="#">SPORTS STORE</a>
-        <cart-summary />
+<body ng-app="sportsstoreApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <div ng-controller="sportsStoreCtrl">
+        <div class="navbar navbar-inverse">
+            <a class="navbar-brand" href="#">SPORTS STORE</a>
+            <cart-summary />
+        </div>
+        <div class="alert alert-danger" ng-show="data.error">
+            Error ({{data.error}}). The product data was not loaded.
+            <a href="/app.html" class="alert-link">Click here to try again</a>
+        </div>
+        <ng-view />
     </div>
-    <div class="alert alert-danger" ng-show="data.error">
-        Error ({{data.error.status}}). The product data was not loaded.
-        <a href="/app.html" class="alert-link">Click here to try again</a>
-    </div>
-    <ng-view />
 
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -48,11 +65,12 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/filters/customfilter.js"></script>
-    <script src="scripts/controllers/productlistcontrollers.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/productlistcontroller.js"></script>
+    <script src="scripts/services/cart.js"></script>
+    <script src="scripts/directives/cartsummary.js"></script>
+    <script src="scripts/filters/custom.js"></script>
     <!-- endbuild -->
-    <script src="scripts/cart/cart.js"></script>
 </body>
 </html>

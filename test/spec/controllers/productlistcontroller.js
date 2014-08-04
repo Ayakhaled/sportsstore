@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: ProductlistcontrollersCtrl', function () {
+describe('Controller: ProductlistcontrollerCtrl', function () {
 
   // load the controller's module
   beforeEach(module('sportsstoreApp'));
 
-  var ProductlistcontrollersCtrl,
+  var ProductlistcontrollerCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    ProductlistcontrollersCtrl = $controller('ProductlistcontrollersCtrl', {
+    ProductlistcontrollerCtrl = $controller('ProductlistcontrollerCtrl', {
       $scope: scope
     });
   }));

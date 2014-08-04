@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend", "Backend\Backend.csproj", "{397CD98F-C295-4826-ABB5-7B2E4350A743}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{E95B3863-720B-4F42-8067-EB5C021A5053}"
+	ProjectSection(SolutionItems) = preProject
+		app\404.html = app\404.html
+		app\index.html = app\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{427BFADC-DF0B-4140-BE68-34436D2593B5}"
+	ProjectSection(SolutionItems) = preProject
+		app\scripts\app.js = app\scripts\app.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "controllers", "controllers", "{31F0CA06-7E55-4527-8A35-332E02EC477C}"
+	ProjectSection(SolutionItems) = preProject
+		app\scripts\controllers\main.js = app\scripts\controllers\main.js
+		app\scripts\controllers\productlistcontroller.js = app\scripts\controllers\productlistcontroller.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "directives", "directives", "{4BA43358-BCF3-4FC2-BD3E-AC69C4777839}"
+	ProjectSection(SolutionItems) = preProject
+		app\scripts\directives\cartsummary.js = app\scripts\directives\cartsummary.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "filters", "filters", "{59BBE62B-6995-4B0C-9426-E203F4AED346}"
+	ProjectSection(SolutionItems) = preProject
+		app\scripts\filters\custom.js = app\scripts\filters\custom.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{50DF8B50-F767-4480-B07F-AE509E74BE7D}"
+	ProjectSection(SolutionItems) = preProject
+		app\scripts\services\cart.js = app\scripts\services\cart.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "views", "views", "{9E111DE2-DB82-4AE1-AAC3-CF372CDEDB51}"
+	ProjectSection(SolutionItems) = preProject
+		app\views\checkoutsummary.html = app\views\checkoutsummary.html
+		app\views\productlist.html = app\views\productlist.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{0F29DDBB-D631-4D82-BA67-344A4A959F22}"
+	ProjectSection(SolutionItems) = preProject
+		app\templates\cartsummary.html = app\templates\cartsummary.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{73670A54-7121-481F-8933-D6C1DCD06902}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{397CD98F-C295-4826-ABB5-7B2E4350A743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397CD98F-C295-4826-ABB5-7B2E4350A743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397CD98F-C295-4826-ABB5-7B2E4350A743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397CD98F-C295-4826-ABB5-7B2E4350A743}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{427BFADC-DF0B-4140-BE68-34436D2593B5} = {E95B3863-720B-4F42-8067-EB5C021A5053}
+		{31F0CA06-7E55-4527-8A35-332E02EC477C} = {427BFADC-DF0B-4140-BE68-34436D2593B5}
+		{4BA43358-BCF3-4FC2-BD3E-AC69C4777839} = {427BFADC-DF0B-4140-BE68-34436D2593B5}
+		{59BBE62B-6995-4B0C-9426-E203F4AED346} = {427BFADC-DF0B-4140-BE68-34436D2593B5}
+		{50DF8B50-F767-4480-B07F-AE509E74BE7D} = {427BFADC-DF0B-4140-BE68-34436D2593B5}
+		{9E111DE2-DB82-4AE1-AAC3-CF372CDEDB51} = {E95B3863-720B-4F42-8067-EB5C021A5053}
+		{0F29DDBB-D631-4D82-BA67-344A4A959F22} = {E95B3863-720B-4F42-8067-EB5C021A5053}
+	EndGlobalSection
+EndGlobal

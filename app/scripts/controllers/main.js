@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('sportsStore')
-    .constant('dataUrl', 'http://localhost:56322/api/products')
+angular.module('sportsstoreApp')
+  .constant('dataUrl', 'http://localhost:56322/api/products')
     .controller('sportsStoreCtrl', function ($scope, $http, dataUrl) {
         $scope.data = {};
         $http.get(dataUrl)

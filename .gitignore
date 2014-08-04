@@ -8,3 +8,4 @@ bower_components
 /Backend/obj/Debug
 *.user
 *.suo
+/packages
