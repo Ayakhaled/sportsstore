@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Backend.Models;
 
 namespace Backend
@@ -12,6 +13,7 @@ namespace Backend
         {
             Products.Add(new Product
             {
+                id = Guid.NewGuid(),
                 name = "Kayak",
                 description = "A boat for one person",
                 category = "Watersports",
@@ -19,6 +21,7 @@ namespace Backend
             });
             Products.Add(new Product
             {
+                id = Guid.NewGuid(),
                 name = "Lifejacket",
                 description = "Protective and fashionable",
                 category = "Watersports",
@@ -26,6 +29,7 @@ namespace Backend
             });
             Products.Add(new Product
             {
+                id = Guid.NewGuid(),
                 name = "Soccer Ball",
                 description = "FIFA-approved size and weight",
                 category = "Soccer",
@@ -33,6 +37,7 @@ namespace Backend
             });
             Products.Add(new Product
             {
+                id = Guid.NewGuid(),
                 name = "Corner Flags",
                 description = "Give your playing field a professional touch",
                 category = "Soccer",
@@ -41,6 +46,7 @@ namespace Backend
 
             Products.Add(new Product
             {
+                id = Guid.NewGuid(),
                 name = "Stadium",
                 description = "Flat-packed 35,000-seat stadium",
                 category = "Soccer",
@@ -49,6 +55,7 @@ namespace Backend
 
             Products.Add(new Product
             {
+                id = Guid.NewGuid(),
                 name = "Thinking Cap",
                 description = "Improve your brain efficiency by 75%",
                 category = "Chess",
@@ -57,6 +64,7 @@ namespace Backend
 
             Products.Add(new Product
             {
+                id = Guid.NewGuid(),
                 name = "Unsteady Chair",
                 description = "Secretly give your opponent a disadvantage",
                 category = "Chess",
@@ -65,6 +73,7 @@ namespace Backend
 
             Products.Add(new Product
             {
+                id = Guid.NewGuid(),
                 name = "Human Chess Board",
                 description = "A fun game for the family",
                 category = "Chess",
@@ -73,6 +82,7 @@ namespace Backend
 
             Products.Add(new Product
             {
+                id = Guid.NewGuid(),
                 name = "Bling-Bling King",
                 description = "Gold-plated, diamond-studded King",
                 category = "Chess",

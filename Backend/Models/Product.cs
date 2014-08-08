@@ -13,6 +13,7 @@ namespace Backend.Models
         public string category { get; set; }
         [Required]
         public double price { get; set; }
+        public int count { get; set; }
         // ReSharper restore InconsistentNaming
     }
 }
