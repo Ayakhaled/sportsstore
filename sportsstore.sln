@@ -20,6 +20,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "controllers", "controllers", "{31F0CA06-7E55-4527-8A35-332E02EC477C}"
 	ProjectSection(SolutionItems) = preProject
 		app\scripts\controllers\admincontroller.js = app\scripts\controllers\admincontroller.js
+		app\scripts\controllers\adminproductcontroller.js = app\scripts\controllers\adminproductcontroller.js
 		app\scripts\controllers\cartsummarycontroller.js = app\scripts\controllers\cartsummarycontroller.js
 		app\scripts\controllers\main.js = app\scripts\controllers\main.js
 		app\scripts\controllers\productlistcontroller.js = app\scripts\controllers\productlistcontroller.js
