@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{E95B3863-720B-4F42-8067-EB5C021A5053}"
 	ProjectSection(SolutionItems) = preProject
 		app\404.html = app\404.html
+		app\admin.html = app\admin.html
 		app\index.html = app\index.html
 	EndProjectSection
 EndProject
