@@ -19,6 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{427B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "controllers", "controllers", "{31F0CA06-7E55-4527-8A35-332E02EC477C}"
 	ProjectSection(SolutionItems) = preProject
+		app\scripts\controllers\admincontroller.js = app\scripts\controllers\admincontroller.js
 		app\scripts\controllers\cartsummarycontroller.js = app\scripts\controllers\cartsummarycontroller.js
 		app\scripts\controllers\main.js = app\scripts\controllers\main.js
 		app\scripts\controllers\productlistcontroller.js = app\scripts\controllers\productlistcontroller.js
@@ -41,6 +42,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{50
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "views", "views", "{9E111DE2-DB82-4AE1-AAC3-CF372CDEDB51}"
 	ProjectSection(SolutionItems) = preProject
+		app\views\adminlogin.html = app\views\adminlogin.html
+		app\views\adminmain.html = app\views\adminmain.html
 		app\views\checkoutsummary.html = app\views\checkoutsummary.html
 		app\views\placeorder.html = app\views\placeorder.html
 		app\views\productlist.html = app\views\productlist.html
